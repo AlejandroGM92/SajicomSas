@@ -1,0 +1,19 @@
+{% extends 'admin-layout.html' %} {% block body %}
+<main>
+  <h1 class="title">Usuarios</h1>
+  <div class="button-container">
+    <a href="/admin/users/add">
+      <button class="btn btn-admin">
+        <i class="fa fa-plus"></i>
+        <h2>Agregar Usuario</h2>
+      </button>
+    </a>
+    <a href="/admin/users/edit">
+      <button class="btn btn-admin">
+        <i class="fa fa-pencil"></i>
+        <h2>Modificar Usuario</h2>
+      </button>
+    </a>
+  </div>
+</main>
+{% endblock body %}

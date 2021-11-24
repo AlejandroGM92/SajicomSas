@@ -1,0 +1,25 @@
+{% extends 'admin-layout.html' %} {% block body %}
+<main>
+  <h1 class="title">Productos</h1>
+  <div class="button-container">
+    <a href="/admin/products/add">
+      <button class="btn btn-admin">
+        <i class="fa fa-plus"></i>
+        <h2>Agregar Producto</h2>
+      </button>
+    </a>
+    <a href="/admin/products/edit">
+      <button class="btn btn-admin">
+        <i class="fa fa-pencil"></i>
+        <h2>Modificar Producto</h2>
+      </button>
+    </a>
+    <a href="/admin/products/search">
+      <button class="btn btn-admin">
+        <i class="fa fa-search"></i>
+        <h2>Buscar Producto</h2>
+      </button>
+    </a>
+  </div>
+</main>
+{% endblock body %}

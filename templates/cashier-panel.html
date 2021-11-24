@@ -1,0 +1,48 @@
+{% extends 'cashier-layout.html' %} {% block body %}
+<main>
+  <form action="/cashier" class="search-box" method="POST">
+    <input
+      type="text"
+      id="product_name"
+      name="product_name"
+      placeholder="Ingrese nombre del producto"
+      autofocus
+    />
+    <button id="search-product-btn" onclick="searchProduct(event)">
+      <i class="fa fa-search"></i>
+    </button>
+  </form>
+  <section class="main-container">
+    <section class="products-gallery">
+      <!-- {% for product in products %}
+      <div class="product-card">
+        <h2>{{product[1]}}</h2>
+        <img
+          class="product-card-image"
+          src="{{ url_for('static', filename='images/'+product[3]) }}"
+          alt="{{product[3]}}"
+        />
+        <h2 class="product-card-price">{{"$ {:,.0f}".format(product[2])}}</h2>
+      </div>
+      {% endfor %} -->
+    </section>
+    <section class="cart-resume">
+      <h3 class="title">Resumen de la Orden</h3>
+      <div class="cart-items-container">
+        <!-- <div class="cart-item">
+          <div class="cart-item-resume">
+            <h4>Taza de Café</h4>
+            <h4>$ 8.000</h4>
+          </div>
+          <div class="cart-item-details">
+            <span>x2</span>
+            <span>$ 4.000</span>
+          </div>
+        </div> -->
+      </div>
+      <div class="cart-total-container"></div>
+      <div class="cart-checkout-container"></div>
+    </section>
+  </section>
+</main>
+{% endblock body %}

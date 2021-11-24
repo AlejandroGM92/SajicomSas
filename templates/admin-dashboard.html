@@ -1,0 +1,24 @@
+{% extends 'admin-layout.html' %} {% block body %}
+<main>
+  <div class="button-container">
+    <a href="admin/users">
+      <button class="btn btn-admin">
+        <i class="fa fa-users"></i>
+        <h1>Usuarios</h1>
+      </button>
+    </a>
+    <a href="admin/products">
+      <button class="btn btn-admin">
+        <i class="fa fa-cutlery"></i>
+        <h1>Productos</h1>
+      </button>
+    </a>
+    <a href="admin/reports">
+      <button class="btn btn-admin">
+        <i class="fa fa-list"></i>
+        <h1>Reportes</h1>
+      </button>
+    </a>
+  </div>
+</main>
+{% endblock body %}
